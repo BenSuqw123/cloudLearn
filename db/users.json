@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1,
+    "username": "user1",
+    "password": "$2a$10$Hk7Uz8xY99E7/d3mDqkqAOWIAdoKTVnJSCHw1RM/pHC0wWgIj2Q7u" // mật khẩu đã hash: "password123"
+  }
+]
