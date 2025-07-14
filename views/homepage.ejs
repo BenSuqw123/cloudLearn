@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cloud | NextCloud Clone</title>
     <script src="/style.js"></script>
+    <script src="/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
@@ -137,9 +138,9 @@
                         <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center">
                             <i class="fas fa-plus mr-2"></i> New
                         </button>
-                        <button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center">
-                            <i class="fas fa-upload mr-2"></i> Upload
-                        </button>
+<button class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 flex items-center selectbtn" type="button">
+    <i class="fas fa-upload mr-2"></i> Upload
+</button>
                     </div>
                     
                     <div class="flex space-x-2">
@@ -163,68 +164,19 @@
                 </div>
 
                 <!-- Files Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Folders -->
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-yellow-500 text-4xl mb-3">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Documents</div>
-                        <div class="text-center text-xs text-gray-500">12 items</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-yellow-500 text-4xl mb-3">
-                            <i class="fas fa-folder"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Images</div>
-                        <div class="text-center text-xs text-gray-500">47 items</div>
-                    </div>
-                    
-                    <!-- Files -->
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-red-500 text-4xl mb-3">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Report.pdf</div>
-                        <div class="text-center text-xs text-gray-500">2.4 MB</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-blue-500 text-4xl mb-3">
-                            <i class="fas fa-file-word"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Project.docx</div>
-                        <div class="text-center text-xs text-gray-500">1.8 MB</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-green-500 text-4xl mb-3">
-                            <i class="fas fa-file-excel"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Budget.xlsx</div>
-                        <div class="text-center text-xs text-gray-500">3.2 MB</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-gray-500 text-4xl mb-3">
-                            <i class="fas fa-file-archive"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Backup.zip</div>
-                        <div class="text-center text-xs text-gray-500">156 MB</div>
-                    </div>
-                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"></div>
 
                 <!-- Upload Area -->
-                <div class="mt-8 p-6 border-2 border-dashed border-gray-300 rounded-lg text-center">
+                 
+                <div class="mt-8 p-6 border-2 border-dashed border-gray-300 rounded-lg text-center" id="uploadarea">
                     <div class="flex justify-center text-3xl text-gray-400 mb-3">
                         <i class="fas fa-cloud-upload-alt"></i>
                     </div>
                     <h3 class="text-lg font-medium text-gray-700 mb-1">Drag and drop files here</h3>
                     <p class="text-gray-500 mb-4">or</p>
-                    <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-                        Select Files
-                    </button>
+<button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 selectbtn" type="button">
+    Select Files
+</button>
                 </div>
             </main>
         </div>
