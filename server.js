@@ -21,6 +21,7 @@ const options = {
 app.use(cors());
 app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
 
 
 
@@ -39,3 +40,5 @@ app.use(errorHandler);
 https.createServer(options,app).listen(3000, '0.0.0.0', () => {
     console.log('Server đang chạy trên https://0.0.0.0:3000');
 });
+
+

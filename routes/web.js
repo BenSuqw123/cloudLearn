@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const fileController = require('../controller/fileController');
+const folderController = require('../controller/folderController');
 
 // GET hoặc POST cũng được, tuỳ bạn gọi từ đâu
 router.get('/', (req, res) => {
@@ -9,5 +10,6 @@ router.get('/', (req, res) => {
 
 
 router.use(fileController);
+router.use(folderController);
 
 module.exports = router;
