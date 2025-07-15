@@ -13,7 +13,7 @@
     <% if (errorMessage) { %>
     <p style="color: red;"><%= errorMessage %></p>
   <% } %>
-    <form action="/signin" method="POST"> 
+    <form id="registerForm"> 
       <div class="input-group">
         <label for="name">Username</label>
         <input type="text" id="name" name="name" placeholder="Enter your username" required />

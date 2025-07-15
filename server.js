@@ -5,11 +5,14 @@ const helmet = require('helmet');
 const https = require('https');
 const cors = require('cors');
 const router = require('./routes/web.js');
-const errorHandler = require('./middleware/errorHandler');
+const errorHandler = require('./middleware/errorHandler'); 
+const userSet = require('./middleware/setUser.js');
 
 
 const app = express();
 const PORT = 3000;
+
+userSet(app);
 
 
 // Cấu hình HTTPS
@@ -21,7 +24,7 @@ const options = {
 app.use(cors());
 app.use(helmet());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.urlencoded({ extended: true }));
 
 
 // Cung cấp file tĩnh từ public/

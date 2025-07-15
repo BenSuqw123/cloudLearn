@@ -1,7 +1,22 @@
 [
   {
-    "id": 1,
-    "username": "user1",
-    "password": "$2a$10$Hk7Uz8xY99E7/d3mDqkqAOWIAdoKTVnJSCHw1RM/pHC0wWgIj2Q7u" // mật khẩu đã hash: "password123"
+    "name": "su",
+    "password": "$2b$10$hu5XUmaYjX7cXMc4deU/X.9/QPoOttG0J4O.BEkRhzqE4VIQ5u7QK",
+    "role": "user"
+  },
+  {
+    "name": "quocnhan",
+    "password": "$2b$10$uTtgy.qYNEqNFUXNwpEx3uhMh7ukgYKbSAp7XbNwBbqHeCZm7OAXK",
+    "role": "user"
+  },
+  {
+    "name": "su1",
+    "password": "$2b$10$UsiTO1865tl17TTi1MEqM.xKkXOjBWSAhUQ1UyZab5mLV5Enbvw92",
+    "role": "user"
+  },
+  {
+    "name": "abc123",
+    "password": "$2b$10$3WTjANTe6d9Ul5fzQaOcG.pjqabiyPXzIiTh46QLApmHqMpNIh5jW",
+    "role": "user"
   }
 ]

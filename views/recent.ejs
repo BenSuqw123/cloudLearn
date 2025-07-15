@@ -43,6 +43,30 @@
                 margin-left: 0;
             }
         }
+         .auth-buttons {
+
+            display: flex;
+
+            gap: 10px;
+
+            margin-bottom: 20px;
+
+        }
+
+        .auth-buttons .auth-button {
+
+            flex: 1;
+
+        }
+
+        .auth-button:hover {
+
+            background-color: #3a7bd5;
+
+            transform: translateY(-2px);
+
+        }
+        
     </style>
 </head>
 <body>
@@ -60,19 +84,19 @@
 
                 <!-- Navigation -->
                 <nav class="flex-1 px-4 space-y-1">
-                    <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700">
+                    <a href="/" class="flex items-center px-4 py-3 rounded-lg bg-gray-800 text-white">
                         <i class="fas fa-folder-open mr-3"></i>
                         <span>My Files</span>
                     </a>
-                    <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700">
+                    <a href="/sharewithme" class="flex items-center px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700">
                         <i class="fas fa-share-alt mr-3"></i>
                         <span>Shared with me</span>
                     </a>
-                    <a href="#" class="flex items-center px-4 py-3 rounded-lg bg-gray-800 text-white">
+                    <a href="/recent" class="flex items-center px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700">
                         <i class="fas fa-clock mr-3"></i>
                         <span>Recent</span>
                     </a>
-                    <a href="#" class="flex items-center px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700">
+                    <a href="/starred" class="flex items-center px-4 py-3 rounded-lg text-gray-300 hover:bg-gray-700">
                         <i class="fas fa-star mr-3"></i>
                         <span>Starred</span>
                     </a>
@@ -98,7 +122,7 @@
                 <div class="p-4 border-t border-gray-700 flex items-center">
                     <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">TA</div>
                     <div class="ml-3">
-                        <div class="text-white font-medium">Tuan Anh</div>
+                        <div class="text-white font-medium">su</div>
                         <div class="text-xs text-gray-400">admin@mycloud.com</div>
                     </div>
                 </div>
@@ -113,9 +137,8 @@
         <!-- Main Content -->
         <div class="flex-1 overflow-auto main-content transition-all duration-300">
             <!-- Header -->
-            <header class="bg-white shadow-sm py-4 px-6 flex items-center justify-between sticky top-0 z-10">
+            <header class="bg-white shadow-sm py-4 px-6 flex items-center justify-between sticky top-0 z-">
                 <h2 class="text-xl font-semibold">Recent Files</h2>
-                
                 <div class="flex items-center space-x-4">
                     <div class="relative">
                         <input type="text" placeholder="Search files..." class="pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -163,40 +186,7 @@
                 </div>
 
                 <!-- Files Grid -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Recent Files -->
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-red-500 text-4xl mb-3">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Recent Report.pdf</div>
-                        <div class="text-center text-xs text-gray-500">2.4 MB</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-blue-500 text-4xl mb-3">
-                            <i class="fas fa-file-word"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Recent Project.docx</div>
-                        <div class="text-center text-xs text-gray-500">1.8 MB</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-green-500 text-4xl mb-3">
-                            <i class="fas fa-file-excel"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Recent Budget.xlsx</div>
-                        <div class="text-center text-xs text-gray-500">3.2 MB</div>
-                    </div>
-                    
-                    <div class="file-card bg-white rounded-lg p-4 cursor-pointer border border-gray-100 hover:border-blue-200">
-                        <div class="flex justify-center text-gray-500 text-4xl mb-3">
-                            <i class="fas fa-file-archive"></i>
-                        </div>
-                        <div class="text-center font-medium truncate">Recent Backup.zip</div>
-                        <div class="text-center text-xs text-gray-500">156 MB</div>
-                    </div>
-                </div>
+                
 
                 <!-- Upload Area -->
                 <div class="mt-8 p-6 border-2 border-dashed border-gray-300 rounded-lg text-center">
